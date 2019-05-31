@@ -1,0 +1,1 @@
+docker-compose up --no-recreate --abort-on-container-exit redis-cli
