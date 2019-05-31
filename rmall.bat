@@ -1,0 +1,1 @@
+forfiles /M rm.bat /S /c "cmd /c call @path"
