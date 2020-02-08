@@ -1,0 +1,20 @@
+version: '2'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    hostname: rabbitmq
+    container_name: rabbitmq
+    ports:
+      - 5672:5672
+      - 15672:15672
+    networks:
+      - rabbitmq-net
+    volumes:
+      - rabbitmq-data:/data
+
+networks:
+  rabbitmq-net:
+
+volumes:
+  rabbitmq-data:
+    
